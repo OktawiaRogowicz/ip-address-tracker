@@ -4,10 +4,11 @@ import styled from 'styled-components';
 import BackgroundImage from "./ip-address-tracker-master/images/pattern-bg.png";
 import SearchButtonImage from "./ip-address-tracker-master/images/icon-arrow.svg";
 import axios from 'axios'
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css';
 import markerIcon from './ip-address-tracker-master/images/icon-location.svg'
+import {popup} from "leaflet/dist/leaflet-src.esm";
 
 export const Container = styled.div`
   display: flex;
@@ -170,6 +171,17 @@ function App() {
         timezone: 'Timezone'
     })
 
+    useEffect(() => {
+        async function getInitialIP() {
+            await fetch("https://api.ipify.org?format=text").then(
+                async resp =>
+                    setInput(await resp.text())
+            );
+        }
+        getInitialIP();
+        getIPGeolocation();
+    },[]);
+
     async function getIPGeolocation() {
         const ip = input;
         const api_key = process.env.REACT_APP_GEO_API_KEY;
@@ -259,9 +271,13 @@ function App() {
                 <Marker
                     // TODO: turns out that API's response doesn't include position for a marker anymore,
                     // TODO: so i cannot make it responsive anymore
-                    position={[51.505, -0.09]}
+                    position={position}
                     icon={mIcon}
-                />
+                >
+                    <Popup>
+                        Unfortunately, IP Geolocation<br/> API doesn't
+                    </Popup>
+                </Marker>
             </MapContainer>
             </div>
         </div>
