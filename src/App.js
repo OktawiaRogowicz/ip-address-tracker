@@ -168,8 +168,13 @@ function App() {
         location: 'Location',
         country: 'Country',
         region: 'region',
-        timezone: 'Timezone'
+        timezone: 'Timezone',
+        lat: 0,
+        lng: 0,
+        postalCode: 'Postal code',
+        city: 'City'
     })
+    const [position, setPosition] = useState([51.505, -0.09]);
 
     useEffect(() => {
         async function getInitialIP() {
@@ -198,7 +203,7 @@ function App() {
                 console.log(data.data);
 
                 const { ip, isp, location } = data.data;
-                const { country, region, timezone } = location;
+                const { country, region, city, timezone, lat, lng, postalCode} = location;
 
                 setResult({
                     ip: ip,
@@ -206,8 +211,13 @@ function App() {
                     location: location,
                     country: country,
                     region: region,
-                    timezone: timezone
+                    city: city,
+                    timezone: timezone,
+                    lat: lat,
+                    lng: lng,
+                    postalCode: postalCode
                 });
+                setPosition([lat, lng]);
             }
         } catch(err) {
             if(err.response.status === 422){
@@ -215,8 +225,6 @@ function App() {
             }
         }
     }
-
-    const position = [51.505, -0.09]
 
     const mIcon = window.L.icon({
         iconUrl: markerIcon,
@@ -248,7 +256,7 @@ function App() {
                 <VerticalLine/>
                 <ResultSection>
                     <h2>Location</h2>
-                    <p>{result.country}, {result.region}</p>
+                    <p>{result.country} {result.region}, {result.postalCode} {result.city} </p>
                 </ResultSection>
                 <VerticalLine/>
                 <ResultSection>
@@ -263,20 +271,15 @@ function App() {
             </ResultContainer>
         </Container>
             <div style={{height: '70vh', zIndex: '1'}}>
-            <MapContainer center={[51.505, -0.09]} zoom={13}>
+            <MapContainer center={position} zoom={13}>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
                 <Marker
-                    // TODO: turns out that API's response doesn't include position for a marker anymore,
-                    // TODO: so i cannot make it responsive anymore
                     position={position}
                     icon={mIcon}
                 >
-                    <Popup>
-                        Unfortunately, IP Geolocation<br/> API doesn't
-                    </Popup>
                 </Marker>
             </MapContainer>
             </div>
