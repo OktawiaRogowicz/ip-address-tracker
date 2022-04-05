@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+<h1 align="center"><code>FRONTEND MENTOR</code></h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <a href="https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef">
+    <img src="https://github.com/OktawiaRogowicz/ip-address-tracker/blob/main/src/ip-address-tracker-master/img_2.png"
+      alt="Frontend mentor challenge"
+      width="300"/>
+  </a>
+</div>
 
-## Available Scripts
+<h2 align="center">🗺️ <code>2. ip address tracker</code> 🗺️</h2>
 
-In the project directory, you can run:
+<div align="center">
+This is a solution to the <a href="https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0">IP Address Tracker challenge on Frontend Mentor</a>! 
 
-### `npm start`
+The second encounter with Frontend Mentor, meaning to let me include an API in a simple project.
+.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<strong>GitHub Pages</strong>: <a href="https://oktawiarogowicz.github.io/ip-address-tracker/"><strong>LIVE SITE</strong></a>
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h1><code>Overview</code></h1>
 
-### `npm test`
+> Users should be able to:
+> 
+>- View the optimal layout for each page depending on their device's screen size
+>- See hover states for all interactive elements on the page
+>- See their own IP address on the map on the initial page load
+>- Search for any IP addresses or domains and see the key information and location
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<div align="center">
+  <img src="https://github.com/OktawiaRogowicz/ip-address-tracker/blob/main/src/ip-address-tracker-master/img.png"
+    alt="Screenshot" width="500"/>
+</div>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+<div align="center">
+  HTML <strong>||</strong> CSS <strong>||</strong> flexbox <strong>||</strong> React <strong>||</strong> Styled components
+  
+  IP geolocation API <strong>||</strong> Leaflet
+  
+  <strong>GitHub Pages</strong>: <a href="https://oktawiarogowicz.github.io/sunnyside-agency/"><strong>LIVE SITE</strong></a>
+</div>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### What I learned
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Once again, during the challenge I focused on testing my React and Styled Components knowledge, but also included two APIs - Leaflet and IP Geolocation API. It turned out to be a good practice of including APIs into my code - as working with its documentations might be little more complicated than usually, and any help might be harder to obtain!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Continued development
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+As this project was still one of my first projects made with React, I want to focus on clean code and good practice - especially once I get feedback on the code, so I can visit it back again.
 
-## Learn More
+In future projects, I would love to include Vue.js, but also test out my obtained CSS knowledge - and that's why I picked <a href="https://github.com/OktawiaRogowicz/ip-address-tracker"><strong>3. Chat app CSS illustration</strong></a>.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<h1><code>Author</code></h1>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Website - [Add your name here](https://www.your-site.com)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
