@@ -42,7 +42,7 @@ The second encounter with Frontend Mentor, meaning to let me include an API in a
   
   IP geolocation API <strong>||</strong> Leaflet
   
-  <strong>GitHub Pages</strong>: <a href="https://oktawiarogowicz.github.io/sunnyside-agency/"><strong>LIVE SITE</strong></a>
+  <strong>GitHub Pages</strong>: <a href="https://oktawiarogowicz.github.io/ip-address-tracker/"><strong>LIVE SITE</strong></a>
 </div>
 
 ### What I learned
