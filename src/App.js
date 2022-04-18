@@ -105,7 +105,7 @@ export const ResultContainer = styled.div `
 
   @media (max-width: 768px) {
     display: inline-block;
-    height: 300px;
+    height: fit-content;
     bottom: -150px;
   }
 `
